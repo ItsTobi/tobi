@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 2em;}
+h2{ font-size: 1.5em;}
+h3{ font-size: 1.5m;}
+p { font-size: 1.30em;}
+ul{ list-style: none;}
+
+body {
+    margin: 0;
+    font-family: Calibri;
+}
+
+button {
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid 2px rgb(1,147,254);
+    color: white;
+    box-shadow: 2px 2px 10px #000;
+    background-color: rgba(14, 34, 68, 0.856);
+}
+
+button:hover {
+    background-color: rgba(17, 51, 109, 0.856);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+color-title{ color:rgb(1, 147, 254); }
+
+header {
+    background-color: rgb(220, 220, 220);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(1, 147, 254);
+    font-size: 2em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(19, 58, 126, 0.856);
+}
+
+header a:hover { 
+    color:rgb(1, 147, 254);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/hero.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#aboutme .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#aboutme h2 {
+    font-weight: bold;
+    font-size: 3em;
+    color: rgb(1, 147, 254);
+}
+
+#lenguajes {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#lenguajes .container {
+    padding: 50px 20px;
+}
+
+#lenguajes h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#lenguajes p{
+    display: none;
+}
+
+#lenguajes .lenguaje {
+    background-position: center center;
+    background-size: cover;
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0vw 0vw 5vw 0.5vw black;
+}
+
+.lenguaje:nth-child(8) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/c++2.png); 6
+}
+
+.lenguaje:nth-child(7) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/react2.png); 5
+}
+
+.lenguaje:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/html2.png); 1
+}
+
+.lenguaje:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/css2.png); 2
+}
+
+.lenguaje:nth-child(5) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/JavaScript2.png); 3
+}
+
+.lenguaje:nth-child(6) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/python2.png); 4
+}
+
+#proyectos .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10px;
+}
+
+#proyectos li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contacto button {
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 850px){
+    header {
+        position: fixed;
+        width: 100%;   /*LO QUE HACE ESTO ES MANTENER SIEMPRE LA BARRA DE ARRIBA */
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 5px;
+    }
+
+    #aboutme .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #aboutme .texto {
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }   
+
+    #aboutme .img-container {
+        background-image: url("img/logo.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #preyectos {
+    }
+
+    #proyectos .container {
+        text-align: initial;
+        background-image: url("img/somos-proya.jpg");
+        background-repeat: no-repeat;
+        background-size: 300px 200px;
+        background-position: calc(15vw - 100px) 53px;
+        border-radius: 25px;
+    }
+
+    #proyectos ul {
+        margin-left: 100px;
+    }
+}
+
