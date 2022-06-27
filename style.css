@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Calibri';
 }
 
 html{
@@ -9,12 +10,11 @@ html{
 h1{ font-size: 2em;}
 h2{ font-size: 1.5em;}
 h3{ font-size: 1.5m;}
-p { font-size: 1.30em;}
+p { font-size: 1.50em;}
 ul{ list-style: none;}
 
 body {
     margin: 0;
-    font-family: Calibri;
 }
 
 button {
